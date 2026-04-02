@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relax Home Massage</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Hero */
+.hero {
+    background: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.btn {
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Sections */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Services */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Reviews */
+.review {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Form */
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Sticky Button */
+.sticky {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+</style>
+
+<script>
+function sendToWhatsApp() {
+    var name = document.getElementById("name").value;
+    var service = document.getElementById("service").value;
+    var address = document.getElementById("address").value;
+
+    var message = "Hello, I want to book a massage.%0AName: " + name +
+                  "%0AService: " + service +
+                  "%0AAddress: " + address;
+
+    var url = "https://wa.me/919749442813?text=" + message;
+    window.open(url, '_blank');
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h2>Relax Home Massage😇</h2>
+</header>
+
+<div class="hero">
+    <h1 style="color: yellow;">Premium Home Massage for Women</h1>
+    <p>Safe • Professional • Relaxing</p>
+    <a class="btn" href="https://wa.me/919749442813">Book on WhatsApp</a>
+    <p style="color:#ffdddd;"><b>* Only for Women | Male Therapists *</b></p>
+</div>
+
+<div class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+
+        <div class="card">
+            <img src="C:\Users\PC\Downloads\photo_2026-04-02_22-36-32.jpg">
+            <h3>Full Body Massage</h3>
+            <p>Deep relaxation and stress relief.</p>
+        </div> 
+
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1591343395082-e120087004b4">
+            <h3>Head & Shoulder & Leg</h3>
+            <p>Quick stress relief therapy.</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="section">
+    <h2>Why Choose Us?</h2>
+    <p>✔ Male therapists only😷</p>
+    <p>✔ Safe & hygienic service✅</p>
+    <p>✔ Doorstep service✅</p>
+    <p>✔ Trusted by customers✅</p>
+</div>
+
+<div class="section">
+    <h2>Customer Reviews</h2>
+
+    <div class="review">⭐️⭐️⭐️⭐️⭐️ "Very professional and relaxing experience!"</div>
+    <div class="review">⭐️⭐️⭐️⭐️⭐️ "Felt safe and comfortable. Highly recommend."</div>
+    <div class="review">⭐️⭐️⭐️⭐️⭐️ "Great service at home. Will book again!"</div>
+
+</div>
+
+<div class="section">
+    <h2>Book Your Session</h2>
+
+    <input type="text" id="name" placeholder="Your Name"><br>
+    <input type="text" id="service" placeholder="Service Required"><br>
+    <textarea id="address" placeholder="Your Address"></textarea><br>
+
+    <button class="btn" onclick="sendToWhatsApp()">Book Now</button>
+</div>
+
+<a class="btn sticky" href="https://wa.me/919749442813">Chat</a>
+
+<footer>
+    <p>© 2026 Relax Home Massage</p>
+</footer>
+
+</body>
+</html>
